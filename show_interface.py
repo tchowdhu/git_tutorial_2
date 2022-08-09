@@ -16,7 +16,7 @@ device = {
     'password' : PASSWORD
 }
 
-# Connect device and run command 
+# Connect device and run command to show all the ip interfaces
 device = ConnectHandler(**device)
 output = device.send_command("show ip interface brief")
 print()
